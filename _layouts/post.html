@@ -4,25 +4,30 @@ layout: "default"
 
 <main class="bg-slate-800">
   <div class="p-4 max-w-5xl mx-auto">
-    <article id="post" class="
-      my-12 prose max-w-none prose-slate lg:prose-lg prose-headings:font-medium
-      prose-p:text-slate-300 prose-headings:text-slate-50
-      prose-a:text-cyan-400 prose-strong:text-slate-300
-      prose-ol:text-slate-300 marker:text-inherit prose-img:mx-auto
-      prose-img:rounded-lg prose-img:shadow-md md:prose-img:w-2/3
-    ">
-    <div class="p-8">
-      <h1 class="text-2xl">
-        {{ page.title }}
-      </h1>
-    </div>
-      
+    <article id="post" class="">
 
-      {{ content }}
+      <div class="grid grid-cols-2 grid-flow-col gap-4">
+
+        <div class="p-4 col-span-8">
+          <h1 class="text-4xl">{{ page.title }}</h1>
+        </div>
+    
+      </div>
+      <hr>
+      
+      <div class="container mx-auto px-4 break-words tracking-wide">
+        {{ content }}
+      </div>
+   
+  
     </article>
+  
+  
   </div>
 
-  <div class="p-4 sm:-ml-16">
+
+
+  <!-- <div class="p-4 sm:-ml-16">
     <script
       src="https://utteranc.es/client.js"
       repo="mzrnsh/ohsostatic-jekyll"
@@ -32,5 +37,5 @@ layout: "default"
       crossorigin="anonymous"
       async
     ></script>
-  </div>
+  </div> -->
 </main>

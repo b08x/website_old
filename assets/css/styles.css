@@ -1,0 +1,67 @@
+/* 
+$font-family-other: 'Vollkorn', serif, !default;
+$font-family-base: 'Source Code Pro', 'Noto Sans Mono', sans-serif;
+$font-family-other-special: 'Special Elite', monospace;
+$font-family-other-spectral: 'Spectral', serif, !default;
+$font-family-heading: Lato, 'Overpass', sans-serif;
+$base-font-family-alt: 'Spectral', serif, !default;
+$base-font-family-mono: 'Space Mono', monospace, !default;
+$base-font-family-mono-alt: 'IBM Plex Mono', monospace;
+$base-font-family-serif: 'Source Serif 4', serif; */
+
+
+body hr {
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+article p {
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+  line-height: 1.8rem;
+  font-size: small;
+}
+
+img {
+  mix-blend-mode: color-dodge;
+}
+
+blockquote {
+  font-style: italic;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: large;
+  margin: 3em;
+}
+
+article h4 {
+  font-size: 1.25rem;
+  font-family: 'IBM Plex Mono', monospace;
+  color: saddlebrown;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+article h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'IBM Plex Mono', monospace;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+article h2 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  font-family: 'IBM Plex Mono', monospace;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+article h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'IBM Plex Mono', monospace;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}

@@ -11,8 +11,8 @@ title: "Happy coding"
       syncopated semantics
     </span>
 
-    <span class="uppercase font-light">
-      A Collection of Words
+    <span class="font-light">
+      a collection of words
     </span>
   </h1>
 

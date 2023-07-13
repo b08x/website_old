@@ -11,9 +11,18 @@ module.exports = {
     h1: {
       'margin': '1rem'
     },
+    h2: {
+      'font-size': '1.125rem'
+    },
     theme: {
       extend: {},
     },
   },
-  plugins: []
+  corePlugins: {
+    aspectRatio: false,
+  },
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+    require('@tailwindcss/typography')
+  ]
 }
