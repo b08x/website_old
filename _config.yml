@@ -1,0 +1,18 @@
+url: 'https://b08x.github.io'
+baseurl: 'b08x'
+title: 'syncopated semantics'
+
+plugins:
+  - jekyll-postcss
+
+postcss:
+  cache: false
+
+exclude:
+  - package.json
+  - postcss.config.js
+  - tailwind.config.js
+  - yarn.lock
+
+
+permalink: /:categories/:title
