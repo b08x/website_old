@@ -1,0 +1,26 @@
+{
+	"chatstart": {
+		"prefix": "chatstart",
+		"description": "chatstart",
+		"scope": "markdown",
+		"body": [
+			"<div class=\"chat chat-start\">",
+			"  <div class=\"chat-bubble\">",
+			"  ",
+			"  </div>",
+			"</div>"
+		]
+	},
+	"chatend": {
+		"prefix": "chatend",
+		"description": "chatend",
+		"scope": "markdown",
+		"body": [
+			"<div class=\"chat chat-end\">",
+			"  <div class=\"chat-bubble\">",
+			"  ",
+			"  </div>",
+			"</div>"
+		]
+	}
+}

@@ -10,8 +10,11 @@ module.exports = {
     './*.md',
     './*.html',
   ],
+  daisyui: {
+    themes: ["coffee", "dark"],
+    base: false
+  },
   theme: {
-
     theme: {
       extend: {
           colors: {
@@ -31,6 +34,7 @@ module.exports = {
     aspectRatio: false,
   },
   plugins: [
+    require("daisyui"),
     require('@tailwindcss/aspect-ratio'),
     require('@tailwindcss/typography')
   ]
