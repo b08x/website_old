@@ -20,7 +20,7 @@ Planning and scheduling
 Making strategic decisions
 Generating creative text formats
 
-Bridging these two concepts, we can envision an enhanced Agile Scrum environment where LLMs, equipped with ToT prompting, can contribute to the problem-solving process. This integration could potentially lead to more efficient sprints, improved solutions, and ultimately, a more agile and effective Scrum process.
+> Bridging these two concepts, we can envision an enhanced Agile Scrum environment where LLMs, equipped with ToT prompting, can contribute to the problem-solving process. This integration could potentially lead to more efficient sprints, improved solutions, and ultimately, a more agile and effective Scrum process.
 
 ## User Stories
 

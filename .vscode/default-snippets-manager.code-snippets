@@ -1,4 +1,52 @@
 {
+	"chatstart2": {
+		"prefix": "chatstart",
+		"description": "chatstart",
+		"scope": "html",
+		"body": [
+			"<div class=\"chat chat-start\">",
+			"  <div class=\"chat-bubble bg-wheat text-slate-900\">",
+			"    ",
+			"  </div>",
+			"</div>"
+		]
+	},
+	"chatend2": {
+		"prefix": "chatend",
+		"description": "chatend",
+		"scope": "html",
+		"body": [
+			"<div class=\"chat chat-end\">",
+			"  <div class=\"chat-bubble bg-lightred text-slate-900\">",
+			"",
+			"  </div>",
+			"</div>"
+		]
+	},
+	"chatstart1": {
+		"prefix": "chatstart",
+		"description": "chatstart",
+		"scope": "markdown",
+		"body": [
+			"<div class=\"chat chat-start\">",
+			"  <div class=\"chat-bubble bg-wheat text-slate-900\">",
+			"",
+			"  </div>",
+			"</div>"
+		]
+	},
+	"chatend1": {
+		"prefix": "chatend",
+		"description": "chatend",
+		"scope": "markdown",
+		"body": [
+			"<div class=\"chat chat-end\">",
+			"  <div class=\"chat-bubble bg-lightred text-slate-900\">",
+			"",
+			"  </div>",
+			"</div>"
+		]
+	},
 	"chatstart": {
 		"prefix": "chatstart",
 		"description": "chatstart",

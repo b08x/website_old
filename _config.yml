@@ -4,6 +4,7 @@ title: 'syncopated semantics'
 
 plugins:
   - jekyll-postcss
+  - jekyll-target-blank
 
 postcss:
   cache: false
@@ -13,6 +14,7 @@ exclude:
   - postcss.config.js
   - tailwind.config.js
   - yarn.lock
+  - scratchpad.html
 
 
 permalink: /:slugified_categories/:title

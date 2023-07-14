@@ -7,4 +7,5 @@ group :jekyll_plugins do
   gem 'jekyll-compose'
   gem 'jekyll-postcss'
   gem 'jekyll-seo-tag'
+  gem 'jekyll-target-blank'
 end

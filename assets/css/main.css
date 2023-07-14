@@ -6,6 +6,14 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  /* Base font size */
+  font-size: 1emx;
+
+  /* Full grid area variable */
+  --fullGrid: 1 / 1 / -1 / -1;
+}
+
 article div.highlight {
   @apply p-4 text-lg rounded-lg shadow-inner;
 }
@@ -29,29 +37,55 @@ article code.language-shell {
 }
 
 .chat-bubble {
-  padding-top: 1.5rem;
+  padding: 1.5rem;
+  margin: 1em;
+  max-width: 70%;
+}
+
+ul {
+  margin: 1rem;
+  text-align: left;
+  align-self: center;
+}
+
+li {
+  margin: 1rem;
+  text-indent: -42px;
+  &::before {
+    content: '*';
+    margin: 0 0.75rem;
+    opacity: 0.8;
+  }
+}
+
+article a {
+  color: #ff6347;
 }
 
 body hr {
-  margin: 1rem;
-  padding: 0.5rem;
+  margin-top: 1em;
+  margin-bottom: 4em;
+  padding: 0.01rem;
 }
 
 img {
-  mix-blend-mode: color-dodge;
+  mix-blend-mode: difference;
 }
 
 pre {
   white-space: pre-wrap;
 }
 
-blockquote {
-  font-style: italic;
-  font-family: 'IBM Plex Mono', monospace;
+article blockquote {
+  font-family: 'Spectral', serif;
   font-size: large;
-  margin: 3em;
-  border-left: 1rem;
-  border-color: aquamarine;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border-left: 3px solid #000;
+  border-right: 3px solid #000;
+  border-radius: 0em;
+  padding-left: 4rem;
+  padding-right: 2rem;
 }
 
 article h1 {
@@ -68,7 +102,7 @@ article h2 {
   font-family: 'IBM Plex Mono', monospace;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  letter-spacing: 0.75rem;
+  letter-spacing: 0.05rem;
 }
 
 article h3 {
@@ -94,4 +128,49 @@ article p {
   line-height: 1.8rem;
   font-size: 1.5rem;
   font-family: 'Source Serif 4', serif;
+}
+
+header {
+  /* Create grid spanning viewport width & height */
+  display: grid;
+  grid-template-rows: 100vh;
+  overflow: hidden;
+  /* box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.5); */
+}
+
+main {
+  padding: 5em 2em;
+  max-width: 94em;
+  margin: 0 auto;
+}
+
+.video-bg {
+  /* Span the full grid */
+  grid-area: var(--fullGrid);
+
+  /* Re-size video to cover full screen while maintaining aspect ratio */
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+
+  /* Display video below overlay */
+  z-index: -1;
+}
+
+.video-bg::-webkit-media-controls {
+  display: none !important;
+}
+
+.video-overlay {
+  /* Span the full grid */
+  grid-area: var(--fullGrid);
+
+  /* Center Content */
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+
+  /* Semi-transparent background */
+  background-color: rgba(0, 0, 0, 0.55);
 }

@@ -17,14 +17,14 @@ title: "Happy coding"
   </h1>
 
 
-    <div class="p-4 max-w-5xl mx-auto">
+    <div class="flex flex-col items-center p-4 max-w-5xl mx-auto text-black">
       <ul>
           {% for post in site.posts %}
-            <li class="-m-4 p-4">
+            <p class="-m-4 p-4">
               <a href="{{ post.url | relative_url }}">
-                {{ post.title }}
+                {{ post.title }}: {{ post.abstract}}
               </a>
-            </li>
+            </p>
           {% endfor %}
       </ul>
     </div>

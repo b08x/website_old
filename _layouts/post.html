@@ -10,12 +10,14 @@ layout: "default"
 
         <div class="p-4 col-span-8">
           <h1 class="text-4xl text-slate-950">{{ page.title }}</h1>
+            <h4>{{ page.date | date: "%Y %b %d"  }}</h4>
         </div>
 
       </div>
-      <hr>
+      
+      <hr class="h-0 bg-gray-900 border-0 dark:bg-gray-700">
 
-      <div class="container my-3 px-4 break-words tracking-wide">
+      <div class="container my-3 px-4 break-words tracking-wide text-slate-900">
         {{ content }}
       </div>
 
@@ -25,15 +27,6 @@ layout: "default"
 
   </div>
 
-  <!-- <div class="p-4 sm:-ml-16">
-    <script
-      src="https://utteranc.es/client.js"
-      repo="mzrnsh/ohsostatic-jekyll"
-      issue-term="pathname"
-      label="utterances"
-      theme="dark-blue"
-      crossorigin="anonymous"
-      async
-    ></script>
-  </div> -->
 </main>
+
+{% include header.html %}
