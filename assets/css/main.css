@@ -8,7 +8,7 @@
 
 :root {
   /* Base font size */
-  font-size: 1emx;
+  font-size: 1rem;
 
   /* Full grid area variable */
   --fullGrid: 1 / 1 / -1 / -1;
