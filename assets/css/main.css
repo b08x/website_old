@@ -1,7 +1,6 @@
 ---
 ---
 @import url('molokai.css');
-@import url('styles.css');
 
 @tailwind base;
 @tailwind components;
@@ -14,4 +13,62 @@ article div.highlight {
 article code.language-plaintext {
   @apply bg-slate-600 text-slate-200 text-sm px-1 rounded font-light
           select-all inline-block leading-normal m-0 align-text-bottom;
+}
+
+body hr {
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+img {
+  mix-blend-mode: color-dodge;
+}
+
+blockquote {
+  font-style: italic;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: large;
+  margin: 3em;
+}
+
+article h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'IBM Plex Mono', monospace;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+article h2 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  font-family: 'IBM Plex Mono', monospace;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.75rem;
+}
+
+article h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'IBM Plex Mono', monospace;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+article h4 {
+  font-size: 1.25rem;
+  font-family: 'IBM Plex Mono', monospace;
+  color: saddlebrown;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+article p {
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+  line-height: 1.8rem;
+  font-size: medium;
+  font-family: 'Source Serif 4', serif;
 }

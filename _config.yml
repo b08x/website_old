@@ -15,4 +15,4 @@ exclude:
   - yarn.lock
 
 
-permalink: /:categories/:title
+permalink: /:slugified_categories/:title
