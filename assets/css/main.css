@@ -29,6 +29,8 @@ blockquote {
   font-family: 'IBM Plex Mono', monospace;
   font-size: large;
   margin: 3em;
+  border-left: 1rem;
+  border-color: aquamarine;
 }
 
 article h1 {
@@ -69,6 +71,6 @@ article p {
   margin-top: 0rem;
   margin-bottom: 1rem;
   line-height: 1.8rem;
-  font-size: medium;
+  font-size: 1.5rem;
   font-family: 'Source Serif 4', serif;
 }

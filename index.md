@@ -4,13 +4,14 @@ title: "Happy coding"
 ---
 
 
-<div class="grid grid-cols-2 py-24 max-w-7xl mx-auto text-center">
+<div class="mx-auto text-center">
+
   <h1 class="text-xl mb-12">
     <span class="text-4xl block text-red-500">
       syncopated semantics
     </span>
 
-    <span class="font-light">
+    <span class="text-stone-950">
       a collection of words
     </span>
   </h1>

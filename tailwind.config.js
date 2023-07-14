@@ -1,3 +1,6 @@
+
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   content: [
     './_drafts/**/*.html',
@@ -8,15 +11,21 @@ module.exports = {
     './*.html',
   ],
   theme: {
-    h1: {
-      'margin': '1rem'
-    },
-    h2: {
-      'font-size': '1.125rem'
-    },
+
     theme: {
-      extend: {},
-    },
+      extend: {
+          colors: {
+              transparent: 'transparent',
+              current: 'currentColor',
+              black: colors.black,
+              white: colors.white,
+              emerald: colors.emerald,
+              indigo: colors.indigo,
+              yellow: colors.yellow,
+              stone: colors.stone,
+          },
+      },
+  },
   },
   corePlugins: {
     aspectRatio: false,
