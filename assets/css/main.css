@@ -7,12 +7,13 @@
 @tailwind utilities;
 
 :root {
+  background-color: antiquewhite;
+
   /* Base font size */
   font-size: 1rem;
 
   /* Full grid area variable */
   --fullGrid: 1 / 1 / -1 / -1;
-  background-color: #faebd7;
 }
 
 article div.highlight {
