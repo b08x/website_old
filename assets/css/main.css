@@ -12,6 +12,7 @@
 
   /* Full grid area variable */
   --fullGrid: 1 / 1 / -1 / -1;
+  background-color: #faebd7;
 }
 
 article div.highlight {
