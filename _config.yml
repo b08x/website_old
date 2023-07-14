@@ -3,7 +3,7 @@ baseurl: ''
 title: 'syncopated semantics'
 
 plugins:
-  - jekyll-postcss
+  - jekyll-postcss-v2
   - jekyll-target-blank
 
 postcss:
