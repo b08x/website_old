@@ -1,4 +1,13 @@
 {
+	"br": {
+		"prefix": "br",
+		"description": "br",
+		"scope": "markdown",
+		"body": [
+			"<br>",
+			"<br>"
+		]
+	},
 	"chatstart2": {
 		"prefix": "chatstart",
 		"description": "chatstart",

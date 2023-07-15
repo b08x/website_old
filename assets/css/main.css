@@ -18,6 +18,7 @@
 
 article div.highlight {
   @apply p-4 text-lg rounded-lg shadow-inner;
+  @apply my-8 mr-20 ml-6;
 }
 
 article code.language-plaintext {
@@ -31,7 +32,10 @@ article code.language-shell {
 }
 
 .highlight {
-  @apply bg-slate-950 rounded-xl;
+  @apply bg-wheat rounded-xl;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  color: black;
 }
 
 .collapse {
@@ -41,7 +45,9 @@ article code.language-shell {
 .chat-bubble {
   padding: 1.5rem;
   margin: 1em;
-  max-width: 70%;
+  max-width: 80%;
+  font-family: monospace;
+  font-size: larger;
 }
 
 ul {
@@ -81,8 +87,8 @@ pre {
 article blockquote {
   font-family: 'Spectral', serif;
   font-size: large;
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin-top: 3em;
+  margin-bottom: 3em;
   border-left: 3px solid #000;
   border-right: 3px solid #000;
   border-radius: 0em;
@@ -91,18 +97,18 @@ article blockquote {
 }
 
 article h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
   font-family: 'IBM Plex Mono', monospace;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
 }
 
 article h2 {
-  font-size: 1.75rem;
-  font-weight: bold;
+  font-size: 2.5rem;
+  font-weight: 400;
   font-family: 'IBM Plex Mono', monospace;
-  margin-top: 1rem;
+  margin-top: 2rem;
   margin-bottom: 1rem;
   letter-spacing: 0.05rem;
 }
@@ -127,8 +133,8 @@ article h4 {
 article p {
   margin-top: 0rem;
   margin-bottom: 1rem;
-  line-height: 1.8rem;
-  font-size: 1.5rem;
+  /* line-height: 1.8rem; */
+  font-size: 1.7rem;
   font-family: 'Source Serif 4', serif;
 }
 
