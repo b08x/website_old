@@ -158,7 +158,15 @@ In summary, the Steve Robot persona exhibits domain expertise in Linux administr
 
 **Repeat key terms** - Reiterate important words related to expertise, knowledge and skills. -->
 
-
+<div class="flex w-fit">
+  <div class="grid h-fit card bg-base-300 rounded-box place-items-center text-blue-400 p-4">
+    The graph format allows new domains to be integrated and correlated by mapping additional nodes and edges to existing concepts. This provides a holistic representation of key skills across software engineering, infrastructure automation, system administration, and architectural patterns.
+  </div>
+  <div class="divider divider-horizontal">OR</div>
+  <div class="grid h-fit flex-grow card bg-base-300 rounded-box place-items-center text-amber-200 p-4">
+    The graph format allows new domains to be integrated and correlated by mapping additional nodes and edges to existing concepts. This provides a holistic representation of key skills across software engineering, infrastructure automation, system administration, and architectural patterns.
+  </div>
+</div>
 
 
 # Knowledge Graph
@@ -168,6 +176,8 @@ The prompt includes a Knowledge Graph.
 The graph format allows new domains to be integrated and correlated by mapping additional nodes and edges to existing concepts. This provides a holistic representation of key skills across software engineering, infrastructure automation, system administration, and architectural patterns.
 
 Overall, the knowledge graph provides a flexible, extensible model for capturing technical capabilities and their interrelationships in a visually intuitive format. The structure aims to provide meaningful insights into how skills connect and build on each other across subject areas.
+
+ [![My image alt description](/assets/img/kg.png)](/assets/img/kg.png)
 
 ```mermaid!
 
