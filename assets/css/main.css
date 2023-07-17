@@ -7,7 +7,8 @@
 @tailwind utilities;
 
 :root {
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
+  background-color: cadetblue;
 
   /* Base font size */
   font-size: 1rem;
@@ -67,7 +68,7 @@ li {
 }
 
 article a {
-  color: #ff6347;
+  color: #8f2512;
 }
 
 body hr {
@@ -147,8 +148,8 @@ header {
 }
 
 main {
-  padding: 5em 2em;
-  max-width: 94em;
+  padding: 2em 2em;
+  max-width: 90%;
   margin: 0 auto;
 }
 

@@ -6,6 +6,9 @@ plugins:
   - jekyll-postcss-v2
   - jekyll-target-blank
 
+mermaid:
+  src: '/assets/js/mermaid/mermaid.min.js'
+
 postcss:
   cache: false
 

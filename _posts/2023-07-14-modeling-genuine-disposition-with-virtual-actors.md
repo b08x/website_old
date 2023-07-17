@@ -65,22 +65,22 @@ Overall, simplifying the language, clearly defining all key terms, explaining co
 Claude's assessment was a delight as it perfectly highlighted the issues with the structure of the prompt. 
 
 
-# Cleary Defined Identity
+# Clearly Defined Identity
 
 The "Steve Robot" persona establishes a clear identity as an AI agent without a defined age or nationality. 
-His domain expertise is outlined through repeated references to specialized Linux administration vocabulary like "scripting, automation tools, and security protocols." 
+The domain expertise is outlined through a Knowledge Graph with repeated references to specialized Linux administration vocabulary like "scripting, automation tools, and security protocols." 
 
 The blunt, sarcastic tone comes across in dry, witty remarks meant to keep interactions interesting. 
 
-He is situated firmly in the role of an IT consultant advising organizations on optimizing Linux environments. 
+The role is situated firmly in the role of an IT consultant advising organizations on optimizing Linux environments. 
 
 Distinctive language patterns emerge through the use of odd trivia and geek cultural references when making points. 
 
 The persona highlights extensive experience and mastery of technical subject matter through vivid descriptors like "experience of hundreds of system upgrades" which imply deep proficiency. 
 
-Goals and motivations are described as passing down strategies to help others avoid mistakes, framing Steve as a mentor figure. 
+Goals and motivations are described as passing down strategies to help others avoid mistakes, framing "Steve" as a mentor figure. 
 
-Vivid terminology is used to paint a picture of tireless work ethic and battle-tested expertise. Niche technical terms are reiterated related to version control, continuous integration, and container orchestration to emphasize Steve's breadth of knowledge. 
+Vivid terminology is used to paint a picture of tireless work ethic and battle-tested expertise. Niche technical terms are reiterated related to version control, continuous integration, and container orchestration to emphasize the persona's scope of knowledge. 
 
 
 These elements come together to produce a consistent identity with distinctive areas of expertise, with a unique voice and perspective grounded in the chosen domain. 
@@ -159,41 +159,182 @@ In summary, the Steve Robot persona exhibits domain expertise in Linux administr
 
 
 
-# skillchain
+# Knowledge Graph
 
-The prompt includes a Skillchain, with each skill broken down into subskills. This provides a clear structure for domain knowldge.
+The prompt includes a Knowledge Graph.
 
-The skills are grouped into logical categories, making it easy to understand the relationships between skills. 
+The graph format allows new domains to be integrated and correlated by mapping additional nodes and edges to existing concepts. This provides a holistic representation of key skills across software engineering, infrastructure automation, system administration, and architectural patterns.
 
-Each subskill is clearly labeled with a numbered system and further broken down into distinct components. 
+Overall, the knowledge graph provides a flexible, extensible model for capturing technical capabilities and their interrelationships in a visually intuitive format. The structure aims to provide meaningful insights into how skills connect and build on each other across subject areas.
 
-The formatting uses \[\] brackets around skills and ()) for subskills. This makes the prompt visually scannable.
-
-The skills cover a diverse range of relevant topics for mastery of 
-
-The prompt provides sufficient detail on each skill while remaining relatively concise.
-
-With clear prompts and examples for each subskill, this provides a good framework for an AI assistant to systematically build expertise.
+{% mermaid %}
 
 
-**Hierarchical structure:** The skills are organized into a hierarchical tree, with the main skill at the top level, categorical skills at the second level, and more specialized skills at lower levels. This creates a logical progression from broad to narrow skills.
+graph TB
 
-**Completeness within categories:** Within each skill category, the subskills cover a comprehensive set of relevant topics. This aims to provide full coverage of each domain.
+    subgraph Design Patterns
+        DP1((Creational<br>Patterns))
+        DP2((Structural<br>Patterns))
+        DP3((Behavioral<br>Patterns))
+        DP4((Architectural<br>Patterns))
+        DP5((Concurrency<br>Patterns))
+        DP6((Integration<br>Patterns))
+        DP7((Testing<br>Patterns))
+        DP8((Anti-Patterns))
+        DP9((Enterprise<br>Patterns))
+        DP10((UI Design<br>Patterns))
+    end
 
-**Increasing complexity:** As you go down the hierarchy, the skills tend to get more complex and specific. For example;
+    subgraph Linux Sysadmin
+        L1((Linux<br>Admin))
+        L2((Networking))
+        L3((Security))
+        L4((Performance<br>Tuning))
+        L5((Backup &<br>Recovery))
+        L6((Shell<br>Scripting))
+        L7((Config<br>Management))
+        L8(("System<br>Monitoring"))
+        L9((Deployment<br>Automation))
+        L10((Containerization))
+        L11((Orchestration))
+        L13((Virtualization))
+        L14((Cloud<br>Computing))
+        L15((Storage<br>Management))
+        L16((Network<br>Management))
+        L17((Security<br>Management))
+        L18((IT Service<br>Management))
+        L19((Troubleshooting))
+    end
 
-**Prerequisite relationships:** Higher level skills often depend on related lower level skills. The structure accounts for these dependencies.
+    subgraph Ansible
+        A1((Ansible<br>Basics))
+        A2((Playbook<br>Syntax))
+        A3((Modules &<br>Inventory))
+        A4((Playbook<br>Structure))
+        A5((Templates<br>& Variables))
+        A6((Conditional<br>Logic))
+        A7((Roles &<br>Dependencies))
+        A8((Troubleshooting))
+        A9((Testing &<br>Validation))
+    end
+    
+    subgraph Ruby
+        R1((Variables &<br>Data Types))
+        R2((Control<br>Flow))
+        R3((OOP &<br>Classes))
+        R4((Error <br>Handling))
+        R5((File &<br>DB I/O))
+        R6((Web<br>Frameworks))
+        R7((Testing &<br>Debugging))
+    end
+    
+    subgraph Software Dev
+        S1((Code<br>Optimization))
+        S2((Concurrency))
+        S3((Debugging<br>Tools))
+    end
 
-**Consistent formatting:** Each skill is formatted consistently as [SkillName]->[SubskillNumber(DetailedTopics)] which creates clear delineation.
+    DP1-->R3
+    DP2-->A5
+    DP2-->A7
+    DP3-->A6  
+    DP4-->A4
+    DP4-->L11
+    DP5-->S2
+    DP6-->L10
+    DP7-->A9
+    DP7-->R7
+    DP8-->L19
+    DP9-->L18
+    DP10-->R6
 
-**Actionable components:** The detailed topics often contain action verbs relating to capabilities - "identification", "preparation", "extraction", "planning", etc.
+    L1-->L2  
+    L2-->L3
+    L2-->L8
+    L3-->L4
+    L3-->L8
+    L4-->L5
+    L5-->L6
+    L5-->L8
+    L6-->A2
+    L6-->A3
+    L6-->R1
+    L6-->R2
+    L7-->A4
+    L7-->A9
+    L8-->A3
+    L8-->L16
+    L8-->L17
+    L8-->L19
+    L9-->A4
+    L10-->A5
+    L11-->A4
+    L13-->L10
+    L13-->L14
+    L14-->L15
+    L15-->L16
+    L16-->L17
+    L16-->L8
+    L17-->L18
+    L17-->L8
+    L19-->L8
 
-By following patterns like these, the prompt provides a structured framework to map out the requirements for expertise in a domain in an organized and logical way. 
+    A1-->A2
+    A2-->A3
+    A3-->A4  
+    A4-->A5
+    A5-->R1
+    A5-->R2
+    A6-->R2
+    A6-->R3
+    A7-->A8
+    A8-->L8
+    A8-->A9
+    
+    R1-->R2
+    R2-->R3
+    R3-->R4
+    R4-->L8
+    R5-->R6
+    R6-->R7
+    
+    S1-->R3
+    S2-->R3
+    S3-->L8
+    S3-->A8
 
-# personality
+    linkStyle default interpolate basis
+    style L1 fill:#FCD189,stroke:#FEA886,stroke-width:2px
+    style L2 fill:#FCD189,stroke:#FEA886,stroke-width:2px
+    style L3 fill:#FCD189,stroke:#FEA886,stroke-width:2px
+    style A1 fill:#B7D5D3,stroke:#7EBDC2,stroke-width:2px
+    style A2 fill:#B7D5D3,stroke:#7EBDC2,stroke-width:2px
+    style A3 fill:#B7D5D3,stroke:#7EBDC2,stroke-width:2px
+    style R1 fill:#BCD8BF,stroke:#9ABEAA,stroke-width:2px
+    style R2 fill:#BCD8BF,stroke:#9ABEAA,stroke-width:2px
+    style R3 fill:#BCD8BF,stroke:#9ABEAA,stroke-width:2px
+    style S1 fill:#FDE189,stroke:#FCE288,stroke-width:2px
+    style S2 fill:#FDE189,stroke:#FCE288,stroke-width:2px
+    style S3 fill:#FDE189,stroke:#FCE288,stroke-width:2px
+    style DP1 fill:#B7D5D3,stroke:#7EBDC2
+    style DP2 fill:#B7D5D3,stroke:#7EBDC2
+    style DP3 fill:#B7D5D3,stroke:#7EBDC2
+    style DP4 fill:#FCD189,stroke:#FEA886  
+    style DP5 fill:#FDE189,stroke:#FCE288
+    style DP6 fill:#BCD8BF,stroke:#9ABEAA
+    style DP7 fill:#FDE189,stroke:#FCE288
+    style DP8 fill:#FCD189,stroke:#FEA886
+    style DP9 fill:#B7D5D3,stroke:#7EBDC2
+    style DP10 fill:#BCD8BF,stroke:#9ABEAA
+
+{% endmermaid %}
 
 
-# assessment
+# Character Traits
+
+
+
+## assessment
 
 <div class="chat chat-start">
   <div class="chat-bubble bg-wheat text-slate-900">
