@@ -9,6 +9,11 @@ tags: [claude]
 #  path: "/assets/img/img-2023-07-14.png"
 #  alt: "image caption"
 abstract: "Look honey, the GPT thinks it's people"
+# gallery:
+#   - url: /assets/img/img-2023-06-18.png
+#     image_path: /assets/img/img-2023-06-18.png
+#   - url: /assets/img/img-2023-06-17.png
+#     image_path: /assets/img/img-2023-06-17.png    
 ---
 
 
@@ -167,6 +172,8 @@ In summary, the Steve Robot persona exhibits domain expertise in Linux administr
     The graph format allows new domains to be integrated and correlated by mapping additional nodes and edges to existing concepts. This provides a holistic representation of key skills across software engineering, infrastructure automation, system administration, and architectural patterns.
   </div>
 </div>
+
+<!-- {% include gallery caption="This is a sample gallery with **Markdown support**." %} -->
 
 
 # Knowledge Graph
