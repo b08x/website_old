@@ -22,3 +22,9 @@ exclude:
 
 
 permalink: /:slugified_categories/:title
+
+defaults:
+  - scope:
+      path: assets/img/favicons
+    values:
+      swcache: true

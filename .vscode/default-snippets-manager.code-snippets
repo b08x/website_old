@@ -1,4 +1,31 @@
 {
+	"highlight": {
+		"prefix": "highlight",
+		"description": "highlight",
+		"scope": "markdown",
+		"body": [
+			"{% highlight sql %}",
+			"",
+			"{% endhighlight %}"
+		]
+	},
+	"code": {
+		"prefix": "code",
+		"description": "code",
+		"scope": "markdown",
+		"body": [
+			"<div class=\"language-sql highlighter-rouge ml-12 mr-12\">",
+			"<pre class=\"highlight text-left pl-8 bg-stone-800 text-amber-300\">",
+			"<code>",
+			"",
+			"",
+			"",
+			"",
+			"</code>",
+			"</pre>",
+			"</div>"
+		]
+	},
 	"br": {
 		"prefix": "br",
 		"description": "br",
