@@ -8,7 +8,7 @@
 
 :root {
   /* background-color: antiquewhite; */
-  background-color: cadetblue;
+  background-color: #4a637d;
 
   /* Base font size */
   font-size: 1rem;
@@ -79,9 +79,9 @@ body hr {
   padding: 0.01rem;
 }
 
-img {
+/* img {
   mix-blend-mode: difference;
-}
+} */
 
 pre {
   white-space: pre-wrap;
@@ -112,7 +112,7 @@ article h1 {
 }
 
 article h2 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 400;
   font-family: 'IBM Plex Mono', monospace;
   margin-top: 2rem;

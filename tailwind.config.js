@@ -29,7 +29,7 @@ module.exports = {
         'lightred': '#ff6347',
         'wheat': '#f5deb3',
         'antiquewhite': '#faebd7',
-        'cadetblue': '#5f9ea0',
+        'greyishblue': '#4a637d',
       },
     },
   },

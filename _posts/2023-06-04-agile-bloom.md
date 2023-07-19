@@ -5,7 +5,7 @@ author: "b08x"
 date: "2023-06-04 04:54"
 categories: [Prompt Engineering]
 tags: ['agile', 'tree of thought', 'openai']
-abstract: "Using the Tree of Thought in an Agile context"
+abstract: "Using the Tree of Thought For Agile Design"
 ---
 
 Agile Scrum and Tree of Thought are connected through various concepts and their relationships. 

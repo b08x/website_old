@@ -1,4 +1,23 @@
 {
+	"paragraph1": {
+		"prefix": "paragraph",
+		"description": "paragraph",
+		"scope": "markdown",
+		"body": [
+			"<p>",
+			"",
+			"",
+			"</p>"
+		]
+	},
+	"paragraph": {
+		"prefix": "paragraph",
+		"description": "paragraph",
+		"scope": "markdown",
+		"body": [
+			"<p></p>"
+		]
+	},
 	"highlight": {
 		"prefix": "highlight",
 		"description": "highlight",

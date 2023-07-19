@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "GPT Feedback"
+title: "Grateful Claude"
 author: b08x
 date: "2023-07-14"
 categories: [gpt]
@@ -8,7 +8,7 @@ tags: [claude]
 #image:
 #  path: "/assets/img/img-2023-07-14.png"
 #  alt: "image caption"
-abstract: "Grateful Claude"
+abstract: "gpt Feedback Helps"
 ---
 
 While Claude does have a _report feedback_ option for every chat response, it is also useful to directly provide feedback. 
