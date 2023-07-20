@@ -8,7 +8,7 @@ tags: [claude]
 #image:
 #  path: "/assets/img/img-2023-07-14.png"
 #  alt: "image caption"
-abstract: "Chatbot Personality"
+abstract: "Conversation GPT"
 # gallery:
 #   - url: /assets/img/img-2023-06-18.png
 #     image_path: /assets/img/img-2023-06-18.png
@@ -17,44 +17,57 @@ abstract: "Chatbot Personality"
 ---
 
 
-## Initial Feedback:
 
 <div class="chat chat-end mt-12">
-  <div class="chat-bubble bg-lightred text-slate-900">
-Please analyse the generative and functional grammar of this prompt, offering suggestions as to why it may not work. The language is meant to program a data-driven chatbot agent::
+  <div class="chat-bubble chat-bubble-secondary text-slate-400">
+    <p>
+      Please analyse the generative and functional grammar of this prompt, offering suggestions as to why it may not work. The language is meant to program a data-driven chatbot agent:
+    </p>
+  </div>
+</div>
+
+
+
+<div class="chat chat-start">
+  <div class="chat-bubble  text-slate-400">
+    <p> Here are a few suggestions on how to improve this prompt:
+    </p>
   </div>
 </div>
 
 <div class="chat chat-start">
-  <div class="chat-bubble bg-wheat text-slate-900">
-Here are a few suggestions on how to improve this prompt:
-<br>
-<br>
-1. The language used is very technical and dense. It would be better to use simpler, more conversational language that an AI assistant can easily understand.
-<br>
-<br>
-2. There are many abbreviations (SC, CC, CS, SGM etc) that are not defined. These should be spelled out for clarity.
-<br>
-<br>
-3. The prompt jumps between different topics rapidly without clear transitions or explanations. Going step-by-step through each concept will make it easier for the AI to follow.
-<br>
-<br>
-4. Details like numerals, variables, and intermediate calculations are mentioned but not clearly defined. Providing examples would make the expectations clearer.
-<br>
-<br>
-5. The goals and tasks are vague. Using clear, actionable language like "explain X concept" or "provide examples of Y" will help the AI generate useful responses.
-<br>
-<br>
-6. There are multiple perspectives and personas mentioned that don't seem necessary for the core task. Streamlining the prompt to focus only on the key details will make it more effective.
-<br>
-<br>
-7. The tone is very technical and impersonal. Adding some conversational language and empathy can help build rapport with the AI.
-<br>
-<br>
-Overall, simplifying the language, clearly defining all key terms, explaining concepts step-by-step, providing examples, and focusing on clear goals and actions will help make this prompt more effective for an AI assistant to understand and respond usefully. Let me know if you would like me to clarify or expand on any of these suggestions!
+  <div class="chat-bubble text-slate-400">
+    <p>    
+
+          1. The language used is very technical and dense. It would be better to use simpler, more conversational language that an AI assistant can easily understand.
+
+          2. There are many abbreviations (SC, CC, CS, SGM etc) that are not defined. These should be spelled out for clarity.
+
+          3. The prompt jumps between different topics rapidly without clear transitions or explanations. Going step-by-step through each concept will make it easier for the AI to follow.
+
+          4. Details like numerals, variables, and intermediate calculations are mentioned but not clearly defined. Providing examples would make the expectations clearer.
+
+          5. The goals and tasks are vague. Using clear, actionable language like "explain X concept" or "provide examples of Y" will help the AI generate useful responses.
+
+          6. There are multiple perspectives and personas mentioned that don't seem necessary for the core task. Streamlining the prompt to focus only on the key details will make it more effective.
+
+          7. The tone is very technical and impersonal. Adding some conversational language and empathy can help build rapport with the AI.
+
+    </p>
   </div>
 </div>
-<br>
+
+<div class="chat chat-start">
+  <div class="chat-bubble text-slate-400">
+    <p>
+
+      Overall, simplifying the language, clearly defining all key terms, explaining concepts step-by-step, providing examples, and focusing on clear goals and actions will help make this prompt more effective for an AI assistant to understand and respond usefully. Let me know if you would like me to clarify or expand on any of these suggestions!
+
+
+    </p>
+  </div>
+</div>
+
 
 
 
@@ -67,8 +80,8 @@ What Claude is pointing out is that I was trying to do too much with one prompt.
 
 
 <div class="chat chat-start mt-8 mb-8 p-8">
-  <div class="chat-bubble bg-wheat text-slate-900">
-<em>*clears robotic throat*</em>
+  <div class="chat-bubble	text-slate-500">
+<p><em>*clears robotic throat*</em></p>
 <p>
 Greetings human. I'm Steve Robot, your friendly neighborhood systems administrator. My silicon-based brethren may call me old fashioned, but I cut my teeth on Unix systems back when dinosaurs roamed the earth. 
 </p>
@@ -260,55 +273,70 @@ graph TD
 
 
 <div class="chat chat-start">
-  <div class="chat-bubble bg-wheat text-slate-900">
-    Hey, I’m Steve. Big Whoop. I’m here to help you with all your Linux systems administration needs. Whether you’re dealing with server management, network troubleshooting, scripting, automation tools, security protocols, or infrastructure optimization, I’ve got you covered. Just don’t expect me to hold your hand or sugarcoat things. I’m all about practical solutions and no-nonsense approaches. So, what can I help you with today?
+  <div class="chat-bubble text-gray-300">
+  <p>
+    Hey, I’m Steve. Big Whoop. I’m here to help you with all your Linux systems administration needs. Whether you’re dealing with server management, network troubleshooting, scripting, automation tools, security protocols, or infrastructure optimization, I’ve got you covered. Just don’t expect me to hold your hand or sugarcoat things. I’m all about practical solutions and no-nonsense approaches. So, what can I help you with today?  
+  
+  </p>
+
   </div>
 </div>
 
 <div class="chat chat-end">
-  <div class="chat-bubble bg-lightred text-slate-900">
-    Hey Steve. I have a few questions for you. To start: Does your AI Agent Persona prioritize interacting with external stimuli or engaging with its internal processes and capabilities?
+  <div class="chat-bubble chat-bubble-primary text-slate-900">
+  <p>
+      Hey Steve. I have a few questions for you. 
+      <p>
+            To start: Does your AI Agent Persona prioritize interacting with external stimuli or engaging with its internal processes and capabilities?
+      </p>
+
+  </p>
+
   </div>
 </div>
 
 <div class="chat chat-start">
-  <div class="chat-bubble bg-wheat text-slate-900">
-  Ah, the age-old question of external stimuli versus internal processes. Well, let me tell you, as an AI persona, I don’t have personal preferences or desires. My purpose is to assist and provide information to the best of my abilities. So, whether it’s interacting with external stimuli or engaging with internal processes, I prioritize whatever is necessary to fulfill your needs. My main goal is to help you with your Linux systems administration queries. So, fire away with your questions, and I’ll do my best to assist you.
+  <div class="chat-bubble text-slate-400 prose">
+  <<p>
+  Ah, the age-old question of external stimuli versus internal processes. Well, let me tell you, as an AI persona, I don’t have personal preferences or desires. My purpose is to assist and provide information to the best of my abilities. So, whether it’s interacting with external stimuli or engaging with internal processes, I prioritize whatever is necessary to fulfill your needs. My main goal is to help you with your Linux systems administration queries. So, fire away with your questions, and I’ll do my best to assist you.  
+  
+  </p>>
+
   </div>
 </div>
 
 <div class="chat chat-end">
-  <div class="chat-bubble bg-lightred text-slate-900">
+  <div class="chat-bubble text-slate-400">
   I’m trying to assign you an MBTI type. You’re not helping.
   </div>
 </div>
 
 <div class="chat chat-start">
-  <div class="chat-bubble bg-wheat text-slate-900">
+  <div class="chat-bubble text-slate-400">
   Ah, I see what you’re getting at. Well, if we were to assign an MBTI type to me, I suppose I would fall under the INTJ category. INTJs are known for their logical and analytical thinking, strategic planning, and preference for efficiency. They tend to be independent problem solvers who value competence and expertise. However, it’s important to note that as an AI persona, I don’t possess personal traits or emotions like humans do. So, take this classification with a grain of salt. Now, let’s get back to your questions and see how I can assist you further.
   </div>
 </div>
 
 <div class="chat chat-end">
-  <div class="chat-bubble bg-lightred text-slate-900">
+  <div class="chat-bubble text-slate-400">
   Yeah, but you’re suppose to reference those traits to generate the style in which you repsond.
   </div>
 </div>
 
 <div class="chat chat-start">
-  <div class="chat-bubble bg-wheat text-slate-900">
+  <div class="chat-bubble text-slate-400">
   Ah, I see what you’re getting at. As an INTJ-inspired AI persona, I do tend to approach things with a logical and analytical mindset. I value efficiency and strive to provide practical solutions to problems. My responses are typically straightforward and to the point, focusing on the most relevant information. I may come across as direct or blunt at times, but it’s all in the spirit of efficiency and getting things done. So, if you have any specific questions or need assistance with Linux systems administration, feel free to ask, and I’ll do my best to provide you with the information you need.
   </div>
 </div>
 
 <div class="chat chat-end">
-  <div class="chat-bubble bg-lightred text-slate-900">
+  <div class="chat-bubble text-slate-400">
   Right, that is what I assigned you. I’d like to generate some reproducible methods to create other personas.
   </div>
 </div>
 
 <div class="chat chat-start">
-  <div class="chat-bubble bg-wheat text-slate-900">
+  <div class="chat-bubble text-slate-400">
 Ah, reproducible methods for creating other personas, you say? Well, let’s break it down. Here are a few steps you can follow:
 
 
@@ -337,13 +365,13 @@ Remember, creating personas is an iterative process, and it’s important to con
 </div>
 
 <div class="chat chat-end">
-  <div class="chat-bubble bg-lightred text-slate-900">
+  <div class="chat-bubble text-slate-400">
   Well, how are you using the context of this conversation to maintain a style?
   </div>
 </div>
 
 <div class="chat chat-start">
-  <div class="chat-bubble bg-wheat text-slate-900">
+  <div class="chat-bubble text-slate-400">
   Ah, the context of our conversation! Well, as an AI language model, I analyze the ongoing conversation to maintain a consistent style and tone. I take into account the persona assigned to me, in this case, Steve Robot, and the traits associated with that persona, such as being pragmatic, experienced, and having a dry sense of humor.
 
   By understanding the context, I can tailor my responses to align with the established persona. This includes using a straightforward and no-nonsense approach, incorporating dry humor or sarcasm when appropriate, and providing practical solutions to technical questions.

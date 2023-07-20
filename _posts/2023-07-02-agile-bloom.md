@@ -2,7 +2,7 @@
 layout: "post"
 title: "Agile Bloom"
 author: "b08x"
-date: "2023-06-04 04:54"
+date: "2023-07-02 04:54"
 categories: [Prompt Engineering]
 tags: ['agile', 'tree of thought', 'openai']
 abstract: "Using the Tree of Thought For Agile Design"

@@ -7,8 +7,12 @@ plugins:
   - jekyll-target-blank
   - jekyll-spaceship
 
-mermaid:
-  src: '/assets/js/mermaid/mermaid.min.js'
+jekyll-spaceship:
+  mermaid-processor:
+    css:
+      class: 'mermaid!'
+    config:
+      theme: dark
 
 postcss:
   cache: false
@@ -19,7 +23,6 @@ exclude:
   - tailwind.config.js
   - yarn.lock
   - scratchpad.html
-
 
 permalink: /:slugified_categories/:title
 

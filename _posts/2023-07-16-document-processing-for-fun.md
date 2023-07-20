@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Document Processing with Ruby"
+title: "Document and Code Base Processing"
 author: b08x
 date: "2023-07-16"
 categories: [ruby]
@@ -8,13 +8,24 @@ tags: ['llm', 'pgvector', nlp]
 #image:
 #  path: "/assets/img/img-2023-07-14.png"
 #  alt: "image caption"
-abstract: "Another Thing You Can Do"
+abstract: "Everyone is Doing it"
 # gallery:
 #   - url: /assets/img/img-2023-06-18.png
 #     image_path: /assets/img/img-2023-06-18.png
 #   - url: /assets/img/img-2023-06-17.png
 #     image_path: /assets/img/img-2023-06-17.png
 ---
+
+## Specifics
+
+to use with: 
+
+* semantic search engine
+* conversational ai
+
+
+
+# Vague Ideas
 
 
 ```mermaid!
@@ -87,4 +98,5 @@ click N2 callback "Get embeddings"
 click N3 callback "Parse syntax"
 click N4 callback "Analyze semantics"
 end
+
 ```

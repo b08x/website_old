@@ -1,5 +1,64 @@
 {
-	"paragraph1": {
+	"chatstartend": {
+		"prefix": "chatstartend",
+		"description": "chatstartend",
+		"scope": "markdown",
+		"body": [
+			"    </p>",
+			"  </div>",
+			"</div>",
+			""
+		]
+	},
+	"olend": {
+		"prefix": "olend",
+		"description": "olend",
+		"scope": "markdown",
+		"body": [
+			"</ol>"
+		]
+	},
+	"olstart": {
+		"prefix": "olstart",
+		"description": "olstart",
+		"scope": "markdown",
+		"body": [
+			"<ol>",
+			""
+		]
+	},
+	"chatstartstart": {
+		"prefix": "chatstartstart",
+		"description": "chatstartstart",
+		"scope": "markdown",
+		"body": [
+			"<div class=\"chat chat-start\">",
+			"  <div class=\"chat-bubble text-slate-400\">",
+			"    <p>"
+		]
+	},
+	"chatendend": {
+		"prefix": "chatendend",
+		"description": "chatendend",
+		"scope": "markdown",
+		"body": [
+			"    </p>",
+			"  </div>",
+			"</div>",
+			""
+		]
+	},
+	"chatendstart": {
+		"prefix": "chatendstart",
+		"description": "chatendstart",
+		"scope": "markdown",
+		"body": [
+			"<div class=\"chat chat-end mt-12\">",
+			"  <div class=\"chat-bubble bg-lightred text-slate-400 prose\">",
+			"    <p>"
+		]
+	},
+	"paragraph": {
 		"prefix": "paragraph",
 		"description": "paragraph",
 		"scope": "markdown",
@@ -8,14 +67,6 @@
 			"",
 			"",
 			"</p>"
-		]
-	},
-	"paragraph": {
-		"prefix": "paragraph",
-		"description": "paragraph",
-		"scope": "markdown",
-		"body": [
-			"<p></p>"
 		]
 	},
 	"highlight": {
@@ -28,23 +79,6 @@
 			"{% endhighlight %}"
 		]
 	},
-	"code": {
-		"prefix": "code",
-		"description": "code",
-		"scope": "markdown",
-		"body": [
-			"<div class=\"language-sql highlighter-rouge ml-12 mr-12\">",
-			"<pre class=\"highlight text-left pl-8 bg-stone-800 text-amber-300\">",
-			"<code>",
-			"",
-			"",
-			"",
-			"",
-			"</code>",
-			"</pre>",
-			"</div>"
-		]
-	},
 	"br": {
 		"prefix": "br",
 		"description": "br",
@@ -52,78 +86,6 @@
 		"body": [
 			"<br>",
 			"<br>"
-		]
-	},
-	"chatstart2": {
-		"prefix": "chatstart",
-		"description": "chatstart",
-		"scope": "html",
-		"body": [
-			"<div class=\"chat chat-start\">",
-			"  <div class=\"chat-bubble bg-wheat text-slate-900\">",
-			"    ",
-			"  </div>",
-			"</div>"
-		]
-	},
-	"chatend2": {
-		"prefix": "chatend",
-		"description": "chatend",
-		"scope": "html",
-		"body": [
-			"<div class=\"chat chat-end\">",
-			"  <div class=\"chat-bubble bg-lightred text-slate-900\">",
-			"",
-			"  </div>",
-			"</div>"
-		]
-	},
-	"chatstart1": {
-		"prefix": "chatstart",
-		"description": "chatstart",
-		"scope": "markdown",
-		"body": [
-			"<div class=\"chat chat-start\">",
-			"  <div class=\"chat-bubble bg-wheat text-slate-900\">",
-			"",
-			"  </div>",
-			"</div>"
-		]
-	},
-	"chatend1": {
-		"prefix": "chatend",
-		"description": "chatend",
-		"scope": "markdown",
-		"body": [
-			"<div class=\"chat chat-end\">",
-			"  <div class=\"chat-bubble bg-lightred text-slate-900\">",
-			"",
-			"  </div>",
-			"</div>"
-		]
-	},
-	"chatstart": {
-		"prefix": "chatstart",
-		"description": "chatstart",
-		"scope": "markdown",
-		"body": [
-			"<div class=\"chat chat-start\">",
-			"  <div class=\"chat-bubble\">",
-			"  ",
-			"  </div>",
-			"</div>"
-		]
-	},
-	"chatend": {
-		"prefix": "chatend",
-		"description": "chatend",
-		"scope": "markdown",
-		"body": [
-			"<div class=\"chat chat-end\">",
-			"  <div class=\"chat-bubble\">",
-			"  ",
-			"  </div>",
-			"</div>"
 		]
 	}
 }

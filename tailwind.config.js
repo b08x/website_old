@@ -11,26 +11,21 @@ module.exports = {
     './*.html',
   ],
   daisyui: {
-    themes: ["coffee", "dark"],
-    base: false,
+    themes: ["light", "dark", 
+          {
+            "dracula": {
+              "base-100": "#27272a",
+              "lightred": "#254574",
+              "primary": "#f5deb3",
+            },
+          }],
+    darkTheme: "dracula",
+    base: true,
+    styled: true,
   },
   theme: {
     extend: {
-      colors: {
-        transparent: 'transparent',
-        'current': 'currentColor',
-        'black': colors.black,
-        'white': colors.white,
-        'pink': colors.pink,
-        'emerald': colors.emerald,
-        'indigo': colors.indigo,
-        'yellow': colors.yellow,
-        'stone': colors.stone,
-        'lightred': '#ff6347',
-        'wheat': '#f5deb3',
-        'antiquewhite': '#faebd7',
-        'greyishblue': '#4a637d',
-      },
+
     },
   },
   corePlugins: {
