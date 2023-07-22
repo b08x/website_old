@@ -6,14 +6,14 @@ layout: "default"
 
   <div class="grid grid-cols-2 grid-flow-row gap-4">
     <div class="p-4 col-span-8">
-      <h1 class="text-6xl text-slate-300">{{ page.title }}</h1>
-      <h4 class="text-zinc-600">{{ page.date | date: "%Y %b %d"  }}</h4>
+      <h1 class="text-6xl text-slate-600">{{ page.title }}</h1>
+      <h5 class="text-slate-600">{{ page.date | date: "%Y %b %d"  }}</h5>
     </div>
   </div>
 
   <hr class="h-0 bg-gray-900 border-0 dark:bg-gray-700">
 
-  <div class="container my-3 px-4 break-words tracking-wide text-slate-400">
+  <div class="container my-3 px-4 break-words tracking-wide text-slate-800">
     {{ content }}
   </div>
 

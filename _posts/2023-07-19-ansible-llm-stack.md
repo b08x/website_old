@@ -57,80 +57,87 @@ The idea is to write a langchain module, load a few-show prompt from the promts 
 
 Or configure it to load a .yml from another location
 
-##### An example task:
 
-```yaml
-- name: test prompt 42
-  langchain_prompt_template:
-    apikey: "{{ keys.openai }}"
-    model: "{{ env.model }}"
-    temp: 0.3
-    top_p: 0.2
-    etc..
-    promptchain: "prompts/042.yml"
-    type: fewshot
-    input_variables:
-      - """
-        can be a multiline
-        statement
-        """
-    store: True
+<div class="flex w-fit">
+  <div class="grid h-fit card bg-base-300 rounded-box place-items-center text-blue-400 p-4">
+  ##### An example task:
 
-```
+  ```yaml
+  - name: test prompt 42
+    langchain_prompt_template:
+      apikey: "{{ keys.openai }}"
+      model: "{{ env.model }}"
+      temp: 0.3
+      top_p: 0.2
+      etc..
+      promptchain: "prompts/042.yml"
+      type: fewshot
+      input_variables:
+        - """
+          can be a multiline
+          statement
+          """
+      store: True
 
-##### An example prompt template:
+  ```
+  </div>
 
-```ruby
----
-:_type: few_shot
-:input_variables:
-- phrase
-:prefix: Identify and Map the Cognitive Grammar in the following phrase
-:example_prompt:
-  :_type: prompt
+  <div class="grid h-fit flex-grow card bg-base-300 rounded-box place-items-center text-amber-200 p-4">
+  ##### An example prompt template:
+
+  ```ruby
+  ---
+  :_type: few_shot
   :input_variables:
-  - input
-  - output
-  :template: |-
-    Input: {input}
-    Output: {output}
-:examples:
-- :input: What did the fish say when it hit the wall
-  :output: |
+  - phrase
+  :prefix: Identify and Map the Cognitive Grammar in the following phrase
+  :example_prompt:
+    :_type: prompt
+    :input_variables:
+    - input
+    - output
+    :template: |-
+      Input: {input}
+      Output: {output}
+  :examples:
+  - :input: What did the fish say when it hit the wall
+    :output: |
 
-    | Element               | Function                                     |
-    |-----------------------|----------------------------------------------|
-    | Interrogative pronoun | Introduces a question and seeks information  |
-    | Past tense question   | Forms questions in the past tense            |
-    | Definite article      | Indicates a specific object                  |
-    | Noun                  | Represents an aquatic creature               |
-    | Verb                  | Expresses the action of speaking             |
-    | Subordinate clause    | Provides additional contextual information   |
-    | Pronoun               | Refers to the fish                           |
-    | Verb phrase           | Indicates the action performed by the fish   |
-    | Preposition           | Introduces a subordinate clause              |
-    | Definite article      | Specifies the wall that the fish hit         |
-    | Noun                  | Represents a physical barrier or structure   |
+      | Element               | Function                                     |
+      |-----------------------|----------------------------------------------|
+      | Interrogative pronoun | Introduces a question and seeks information  |
+      | Past tense question   | Forms questions in the past tense            |
+      | Definite article      | Indicates a specific object                  |
+      | Noun                  | Represents an aquatic creature               |
+      | Verb                  | Expresses the action of speaking             |
+      | Subordinate clause    | Provides additional contextual information   |
+      | Pronoun               | Refers to the fish                           |
+      | Verb phrase           | Indicates the action performed by the fish   |
+      | Preposition           | Introduces a subordinate clause              |
+      | Definite article      | Specifies the wall that the fish hit         |
+      | Noun                  | Represents a physical barrier or structure   |
 
-- :input: one could hypothesize a potential link
-  :output: |
+  - :input: one could hypothesize a potential link
+    :output: |
 
-    | Element            | Function                                    |
-    |--------------------|---------------------------------------------|
-    | Indefinite pronoun | Represents a general or unspecified person  |
-    | Modal verb         | Indicates possibility or ability            |
-    | Verb               | Expresses the action of hypothesizing       |
-    | Determiner         | Indicates an indefinite or non-specific noun|
-    | Adjective          | Describes the nature of the link            |
-    | Noun               | Represents a connection or relationship     |
+      | Element            | Function                                    |
+      |--------------------|---------------------------------------------|
+      | Indefinite pronoun | Represents a general or unspecified person  |
+      | Modal verb         | Indicates possibility or ability            |
+      | Verb               | Expresses the action of hypothesizing       |
+      | Determiner         | Indicates an indefinite or non-specific noun|
+      | Adjective          | Describes the nature of the link            |
+      | Noun               | Represents a connection or relationship     |
 
-:suffix: |-
-  Input: {phrase}
-  Output:
+  :suffix: |-
+    Input: {phrase}
+    Output:
 
-```
+  ```
+  </div>
 
 
+</div>
 
 
 
