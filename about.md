@@ -9,7 +9,7 @@ image: img-2023-06-16.png
 
 
 
-<div class="container flex flex-col w-full">
+<div class="container flex flex-col w-full mt-8">
 
   <div class="grid h-auto mt-8">
     <a href="{{ site.url }}">

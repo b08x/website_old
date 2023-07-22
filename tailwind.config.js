@@ -11,10 +11,10 @@ module.exports = {
     './*.html',
   ],
   daisyui: {
-    themes: ["light", "dark", 
+    themes: ["light", "dark",
           {
             "dracula": {
-              "base-100": "#27272a",
+              "base-100": "#fff",
               "lightred": "#254574",
               "primary": "#f5deb3",
             },
