@@ -13,31 +13,26 @@
 
 # Static engine of your blog
 # - One of: general, html, jekyll, octopress, hexo
-siteEngine: "jekyll"
+siteEngine: "general"
 # Website URL of your blog
-siteUrl: "https://b08x.github.io"
+siteUrl: ""
 
 # Root directory to your blog
 # - Leave it empty to use the current project path (recommended)
 siteLocalDir: ""
-
 # Directory to drafts from siteLocalDir
 siteDraftsDir: "_drafts/"
-
 # Directory to posts from siteLocalDir
 sitePostsDir: "_posts/"
-
 # Directory to images from siteLocalDir
 # - E.g. to use the current filename directory, can use {directory}
-#TODO: restructure post/asset layout
 siteImagesDir: "assets/img/"
-#siteImagesDir: "{directory}/assets/"
 
 # URLs to tags/posts/categories JSON files
 # https://github.com/zhuochun/md-writer/wiki/Settings-for-Front-Matters
-urlForPosts: "https://b08x.github.io/post.json"
-urlForTags: "https://b08x.github.io/tags.json"
-urlForCategories: "https://b08x.github.io/categories.json"
+urlForPosts: ""
+urlForTags: ""
+urlForCategories: ""
 
 # The front matter key name
 frontMatterNameTags: "tags"
@@ -47,39 +42,25 @@ frontMatterNameCategories: "categories"
 newDraftFileName: "{slug}{extension}"
 # Filename format of new posts created
 newPostFileName: "{year}-{month}-{day}-{slug}{extension}"
-#newPostFileName: "{slug}/index.md"
-
 
 # Front matter add custom fields
 # - Configured as a key-value pair (fieldName: defaultValue)
 # - Referenced by fieldName
-frontMatterCustomFields:
-  author: b08x
-  categories: []
-  tags: []
-  image: ""
-  caption: "image caption"
-  abstract: ""
+# frontMatterCustomFields:
+#   author: "Your Name Here"
 # Front matter date format, determines the {date} in frontMatter
-frontMatterDate: "{year}-{month}-{day}"
+frontMatterDate: "{year}-{month}-{day} {hour}:{minute}"
 # Front matter template
 frontMatter: """
 ---
-layout: post
+layout: "{layout}"
 title: "{title}"
-author: "{author}"
 date: "{date}"
-categories: [{categories}]
-tags: [{tags}]
-#image:
-#  path: "/assets/img/img-{year}-{month}-{day}.png"
-#  alt: "{caption}"
-#abstract: "{abstract}"
 ---
 """
 
 # File extension of posts/drafts
-fileExtension: ".md"
+fileExtension: ".markdown"
 # File slug separator
 slugSeparator: "-"
 

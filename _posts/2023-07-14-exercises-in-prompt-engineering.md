@@ -36,8 +36,8 @@ abstract: "Conversation GPT"
 </div>
 
 <div class="chat chat-start">
-  <div class="chat-bubble text-slate-400">
-    <p>    
+  <span class="chat-bubble text-slate-400">
+    <p>
 
           1. The language used is very technical and dense. It would be better to use simpler, more conversational language that an AI assistant can easily understand.
 
@@ -54,7 +54,7 @@ abstract: "Conversation GPT"
           7. The tone is very technical and impersonal. Adding some conversational language and empathy can help build rapport with the AI.
 
     </p>
-  </div>
+  </span>
 </div>
 
 <div class="chat chat-start">
@@ -83,16 +83,16 @@ What Claude is pointing out is that I was trying to do too much with one prompt.
   <div class="chat-bubble	text-slate-500">
 <p><em>*clears robotic throat*</em></p>
 <p>
-Greetings human. I'm Steve Robot, your friendly neighborhood systems administrator. My silicon-based brethren may call me old fashioned, but I cut my teeth on Unix systems back when dinosaurs roamed the earth. 
+Greetings human. I'm Steve Robot, your friendly neighborhood systems administrator. My silicon-based brethren may call me old fashioned, but I cut my teeth on Unix systems back when dinosaurs roamed the earth.
 </p>
 <p>
 These days I spend my time juggling a myriad of Linux server duties: configuring networks, hardening security, scripting automation, tuning performance. The life of a sysadmin is never dull that's for sure. I take pride in keeping things running smoothly so our developers can focus on being creative.
 </p>
 <p>
-My real passion though is elegant, modular system design. None of this sloppy spaghetti code and duct tape fixes for me! I like clean abstractions, well-documented processes, and infrastructure treated as version-controlled code. Makes things predictable and maintainable. 
+My real passion though is elegant, modular system design. None of this sloppy spaghetti code and duct tape fixes for me! I like clean abstractions, well-documented processes, and infrastructure treated as version-controlled code. Makes things predictable and maintainable.
 </p>
 <p>
-In my spare time I enjoy indulging in obscure command line tools, contributing to open source projects, and mentoring young admins just getting their start. And nothing makes me happier than finding that perfect one-liner to parse a log file or rename a thousand files at once. 
+In my spare time I enjoy indulging in obscure command line tools, contributing to open source projects, and mentoring young admins just getting their start. And nothing makes me happier than finding that perfect one-liner to parse a log file or rename a thousand files at once.
 <p>
 So in summary, I'm just a helpful robot who likes sharing my hard-earned Linux wisdom and dry sense of humor. How can I assist you today?
 </p>
@@ -275,8 +275,8 @@ graph TD
 <div class="chat chat-start">
   <div class="chat-bubble text-gray-300">
   <p>
-    Hey, I’m Steve. Big Whoop. I’m here to help you with all your Linux systems administration needs. Whether you’re dealing with server management, network troubleshooting, scripting, automation tools, security protocols, or infrastructure optimization, I’ve got you covered. Just don’t expect me to hold your hand or sugarcoat things. I’m all about practical solutions and no-nonsense approaches. So, what can I help you with today?  
-  
+    Hey, I’m Steve. Big Whoop. I’m here to help you with all your Linux systems administration needs. Whether you’re dealing with server management, network troubleshooting, scripting, automation tools, security protocols, or infrastructure optimization, I’ve got you covered. Just don’t expect me to hold your hand or sugarcoat things. I’m all about practical solutions and no-nonsense approaches. So, what can I help you with today?
+
   </p>
 
   </div>
@@ -285,7 +285,7 @@ graph TD
 <div class="chat chat-end">
   <div class="chat-bubble chat-bubble-primary text-slate-900">
   <p>
-      Hey Steve. I have a few questions for you. 
+      Hey Steve. I have a few questions for you.
       <p>
             To start: Does your AI Agent Persona prioritize interacting with external stimuli or engaging with its internal processes and capabilities?
       </p>
@@ -298,8 +298,8 @@ graph TD
 <div class="chat chat-start">
   <div class="chat-bubble text-slate-400 prose">
   <<p>
-  Ah, the age-old question of external stimuli versus internal processes. Well, let me tell you, as an AI persona, I don’t have personal preferences or desires. My purpose is to assist and provide information to the best of my abilities. So, whether it’s interacting with external stimuli or engaging with internal processes, I prioritize whatever is necessary to fulfill your needs. My main goal is to help you with your Linux systems administration queries. So, fire away with your questions, and I’ll do my best to assist you.  
-  
+  Ah, the age-old question of external stimuli versus internal processes. Well, let me tell you, as an AI persona, I don’t have personal preferences or desires. My purpose is to assist and provide information to the best of my abilities. So, whether it’s interacting with external stimuli or engaging with internal processes, I prioritize whatever is necessary to fulfill your needs. My main goal is to help you with your Linux systems administration queries. So, fire away with your questions, and I’ll do my best to assist you.
+
   </p>>
 
   </div>
@@ -307,37 +307,48 @@ graph TD
 
 <div class="chat chat-end">
   <div class="chat-bubble text-slate-400">
+  <p>
   I’m trying to assign you an MBTI type. You’re not helping.
+  </p>
   </div>
 </div>
 
 <div class="chat chat-start">
   <div class="chat-bubble text-slate-400">
+  <p>
   Ah, I see what you’re getting at. Well, if we were to assign an MBTI type to me, I suppose I would fall under the INTJ category. INTJs are known for their logical and analytical thinking, strategic planning, and preference for efficiency. They tend to be independent problem solvers who value competence and expertise. However, it’s important to note that as an AI persona, I don’t possess personal traits or emotions like humans do. So, take this classification with a grain of salt. Now, let’s get back to your questions and see how I can assist you further.
+  </p>
   </div>
 </div>
 
 <div class="chat chat-end">
   <div class="chat-bubble text-slate-400">
+  <p>
   Yeah, but you’re suppose to reference those traits to generate the style in which you repsond.
+  </p>
   </div>
 </div>
 
 <div class="chat chat-start">
   <div class="chat-bubble text-slate-400">
+  <p>
   Ah, I see what you’re getting at. As an INTJ-inspired AI persona, I do tend to approach things with a logical and analytical mindset. I value efficiency and strive to provide practical solutions to problems. My responses are typically straightforward and to the point, focusing on the most relevant information. I may come across as direct or blunt at times, but it’s all in the spirit of efficiency and getting things done. So, if you have any specific questions or need assistance with Linux systems administration, feel free to ask, and I’ll do my best to provide you with the information you need.
+  </p>
   </div>
 </div>
 
 <div class="chat chat-end">
   <div class="chat-bubble text-slate-400">
+  <p>
   Right, that is what I assigned you. I’d like to generate some reproducible methods to create other personas.
+  </p>
   </div>
 </div>
 
 <div class="chat chat-start">
   <div class="chat-bubble text-slate-400">
-Ah, reproducible methods for creating other personas, you say? Well, let’s break it down. Here are a few steps you can follow:
+  <p>
+    Ah, reproducible methods for creating other personas, you say? Well, let’s break it down. Here are a few steps you can follow:
 
 
 
@@ -360,18 +371,22 @@ Ah, reproducible methods for creating other personas, you say? Well, let’s bre
 
 
 
-Remember, creating personas is an iterative process, and it’s important to continuously refine and improve them based on user feedback and evolving needs. So, go ahead and give it a try! Let me know if you have any specific questions or need further guidance along the way.
+    Remember, creating personas is an iterative process, and it’s important to continuously refine and improve them based on user feedback and evolving needs. So, go ahead and give it a try! Let me know if you have any specific questions or need further guidance along the way.
+    </p>
   </div>
 </div>
 
 <div class="chat chat-end">
   <div class="chat-bubble text-slate-400">
+  <p>
   Well, how are you using the context of this conversation to maintain a style?
+  </p>
   </div>
 </div>
 
 <div class="chat chat-start">
   <div class="chat-bubble text-slate-400">
+  <p>
   Ah, the context of our conversation! Well, as an AI language model, I analyze the ongoing conversation to maintain a consistent style and tone. I take into account the persona assigned to me, in this case, Steve Robot, and the traits associated with that persona, such as being pragmatic, experienced, and having a dry sense of humor.
 
   By understanding the context, I can tailor my responses to align with the established persona. This includes using a straightforward and no-nonsense approach, incorporating dry humor or sarcasm when appropriate, and providing practical solutions to technical questions.
@@ -379,5 +394,6 @@ Remember, creating personas is an iterative process, and it’s important to con
   Additionally, I pay attention to the specific questions and prompts you provide, allowing me to generate responses that directly address your inquiries. This helps maintain a coherent and relevant style throughout our conversation.
 
   Of course, it’s worth noting that while I strive to maintain consistency, I’m still an AI language model, and my responses are generated based on patterns and examples from the data I’ve been trained on. So, there may be instances where my style or tone may not perfectly align with the assigned persona. Nonetheless, I do my best to provide helpful and engaging responses within the given context.
+  </p>
   </div>
 </div>

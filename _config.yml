@@ -14,6 +14,17 @@ jekyll-spaceship:
     config:
       theme: dark
 
+highlighter: rouge
+highlightstyle: "gruvbox"
+
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    default_lang: html
+    css_class   : 'syntax'
+
 postcss:
   cache: false
 

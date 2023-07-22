@@ -21,3 +21,18 @@ Conversations with the AI can be saved in a JSON file, and the saved JSON file c
 {% highlight ruby %}
 
 {% endhighlight %}
+
+```mermaid!
+sequenceDiagram
+    participant U as User
+    participant D as Discourse Object
+    participant M as Model
+
+    U->>D: Input
+    D->>D: Retrieve History
+    D->>M: Pass History
+    M-->>D: Model Response
+    D->>D: Extract Reply
+    D->>D: Reconstruct Object
+    D-->>U: Output
+```

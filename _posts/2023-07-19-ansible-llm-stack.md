@@ -1,6 +1,6 @@
 ---
 layout: "post"
-title: "Ansible LLM"
+title: "Ansible LLMOps"
 author: "b08x"
 date: "2023-07-19 04:54"
 categories: [Ansible]
@@ -9,23 +9,39 @@ abstract: "Configuration Management"
 ---
 
 
+# Objective
+
+Configuration Management for pre-processing pipeline
+
+sources:
+
+* repositories
+* obsidian
+* archivebox
+* pdf/md/txt document library
+
+LLMops tools:
+
+* flowise
+* opensearch
+* langchain
+
+
 ## reproducible environments
 
-Much like you enjoy walking back into a room and having all of your objects in the same place you left them, you might enjoy the idea of using Ansible for LLM configuration management.
+Much like you enjoy walking back into a room where all of your objects are in the same place you left them, you might enjoy the idea of using Ansible for managing LLM Stack.
 
-Extending is exiting functionality with modules for [OpenAI](https://google.com) and LangChain, along with roles for deployments, nlp processing and prompt testing, Ansible proves to be a useful tool in the LLM Application Development chain.
+Extending functionality with custom modules for [OpenAI](https://google.com) and LangChain, along with roles for deployments, nlp processing and prompt testing, Ansible can useful tool in the LLM Application Development chain.
+
+## ansible-gpt
+
+[playbook linter using openai](https://github.com/sshnaidm/ansible-gpt/blob/master/article-lint.md)
+
 
 ## deployments
 
-#### llm stacks
-
-
-
-
-
 #### applications
 
-* flowise
 * diffy
 * monadic-chat
 * streamlit
@@ -35,11 +51,13 @@ Extending is exiting functionality with modules for [OpenAI](https://google.com)
 * nlp processing
 * vector embedding
 
-
 ## modules
 
-Using the langchain module, load a few-show prompt from the promts folder
+The idea is to write a langchain module, load a few-show prompt from the promts folder
+
 Or configure it to load a .yml from another location
+
+##### An example task:
 
 ```yaml
 - name: test prompt 42
@@ -49,7 +67,7 @@ Or configure it to load a .yml from another location
     temp: 0.3
     top_p: 0.2
     etc..
-    promptchain: prompts/042.yml
+    promptchain: "prompts/042.yml"
     type: fewshot
     input_variables:
       - """
@@ -60,9 +78,9 @@ Or configure it to load a .yml from another location
 
 ```
 
+##### An example prompt template:
 
-
-```yaml
+```ruby
 ---
 :_type: few_shot
 :input_variables:
@@ -128,6 +146,3 @@ tasks for
   database setup | query
   stack setup
   containerization
-
-
-
